@@ -1,0 +1,137 @@
+/*
+create variable - $primarybtn: "color";
+nesting - all classes and ids can go inside the main property
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main .container {
+  height: auto;
+}
+
+header {
+  width: auto;
+  height: 150px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .branding {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .logo {
+  font-family: times, serif;
+  font-style: italic;
+  font-size: large;
+  text-transform: uppercase;
+  border-style: solid;
+  border-radius: 5%;
+  padding: 15px;
+  width: 360px;
+  text-align: center;
+}
+
+header .redtext {
+  color: #8B0000;
+}
+
+header .blacktext {
+  color: #2a5ab4;
+}
+
+header .navigation {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  line-height: 50px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header .navbar {
+  float: right;
+  padding-right: 50px;
+}
+
+header .navbar a {
+  margin: 20px;
+  color: black;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  height: 800px;
+}
+
+footer {
+  height: auto;
+  line-height: 2;
+  color: white;
+  background-color: #1e272e;
+}
+
+footer .footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-logo {
+  font-family: times, serif;
+  font-style: italic;
+  font-size: small;
+  text-transform: uppercase;
+  border-style: solid;
+  border-radius: 5%;
+  padding: 0;
+  width: 360px;
+  margin-top: 10px;
+  margin-right: 50%;
+  text-align: center;
+}
+
+footer .footer-content {
+  text-align: center;
+}
+
+footer .copy p {
+  text-align: center;
+}
+
+#blog-posts {
+  min-height: 400px;
+  text-align: center;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 400px;
+      grid-template-columns: 400px 400px;
+  grid-column-gap: 20px;
+}
+/*# sourceMappingURL=style.css.map */

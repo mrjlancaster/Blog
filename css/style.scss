@@ -1,0 +1,118 @@
+/*
+create variable - $primarybtn: "color";
+nesting - all classes and ids can go inside the main property
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main .container {
+    height: auto;
+}
+
+header {
+    width: auto;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    .branding {
+       align-self: center;
+    }  
+    .logo {
+        font-family: times, serif;
+        font-style: italic;
+        font-size: large;
+        text-transform: uppercase;
+        border-style: solid;
+        border-radius: 5%;
+        padding: 15px;
+        width: 360px;
+        text-align: center;     
+    }
+    .redtext {
+        color: #8B0000;
+    }
+    .blacktext {
+        color: rgb(42, 90, 180);
+    }
+    .navigation {
+        align-self: flex-end;
+        line-height: 50px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navbar {
+        float: right;
+        padding-right: 50px;
+        a {
+            margin: 20px;
+            color: black;
+        }
+    }
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    height: 800px;
+}
+
+
+
+
+
+footer{
+    height: auto;
+    line-height: 2;
+    color: white;
+    background-color: #1e272e;
+.footer-box{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-logo{
+    font-family: times, serif;
+    font-style: italic;
+    font-size: small;
+    text-transform: uppercase;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 0;
+    width: 360px;
+    margin-top: 10px;
+    margin-right: 50%;
+    text-align: center;
+}
+
+.footer-content {
+    text-align: center;  
+}
+
+.copy p {
+    text-align: center;
+  }
+}
+
+
+#blog-posts{
+    min-height: 400px;
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-column-gap: 20px;
+
+}
