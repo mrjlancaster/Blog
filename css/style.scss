@@ -8,20 +8,20 @@ nesting - all classes and ids can go inside the main property
     padding: 0px;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
 body {
-    width: 100%;
     margin: 0 auto;
 }
 
-main .container {
+.container {
     height: auto;
 }
 
 header {
-    width: auto;
-    height: 150px;
+    width: 100%;
+    height: 120px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -31,7 +31,6 @@ header {
     .logo {
         font-family: times, serif;
         font-style: italic;
-        font-size: large;
         text-transform: uppercase;
         border-style: solid;
         border-radius: 5%;
@@ -48,7 +47,7 @@ header {
     .navigation {
         align-self: flex-end;
         line-height: 50px;
-        font-size: 16px;
+        font-size: 14px;
         font-family: Arial, Helvetica, sans-serif;
     }
     .navbar {
@@ -61,58 +60,40 @@ header {
     }
 }
 
-section {
+.wrapper{
+    width: 50%;
+    margin: 50px auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-one {
+    padding: 50px;
     width: 80%;
     margin: 0 auto;
-    height: 800px;
+    h2 {
+        padding: 20px 0;
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+.post-two {
+    padding: 50px;
+    width: 80%;
+    margin: 0 auto;
+    h2 {
+        padding: 20px 0;
+    }
+}
+
+.footer-wrapper {
+    width: 100%;
+    height: 200px;
+    background: #000;
 }
 
 
-
-
-
-footer{
-    height: auto;
-    line-height: 2;
-    color: white;
-    background-color: #1e272e;
-.footer-box{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.footer-logo{
-    font-family: times, serif;
-    font-style: italic;
-    font-size: small;
-    text-transform: uppercase;
-    border-style: solid;
-    border-radius: 5%;
-    padding: 0;
-    width: 360px;
-    margin-top: 10px;
-    margin-right: 50%;
-    text-align: center;
-}
-
-.footer-content {
-    text-align: center;  
-}
-
-.copy p {
-    text-align: center;
-  }
-}
-
-
-#blog-posts{
-    min-height: 400px;
-    text-align: center;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 400px 400px;
-    grid-column-gap: 20px;
-
-}

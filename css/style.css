@@ -7,20 +7,21 @@ nesting - all classes and ids can go inside the main property
   padding: 0px;
   text-decoration: none;
   list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  width: 100%;
   margin: 0 auto;
 }
 
-main .container {
+.container {
   height: auto;
 }
 
 header {
-  width: auto;
-  height: 150px;
+  width: 100%;
+  height: 120px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,7 +39,6 @@ header .branding {
 header .logo {
   font-family: times, serif;
   font-style: italic;
-  font-size: large;
   text-transform: uppercase;
   border-style: solid;
   border-radius: 5%;
@@ -59,7 +59,7 @@ header .navigation {
   -ms-flex-item-align: end;
       align-self: flex-end;
   line-height: 50px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -73,65 +73,47 @@ header .navbar a {
   color: black;
 }
 
-section {
-  width: 80%;
-  margin: 0 auto;
-  height: 800px;
-}
-
-footer {
+.wrapper {
+  width: 50%;
+  margin: 50px auto;
   height: auto;
-  line-height: 2;
-  color: white;
-  background-color: #1e272e;
-}
-
-footer .footer-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-footer .footer-logo {
-  font-family: times, serif;
-  font-style: italic;
-  font-size: small;
-  text-transform: uppercase;
-  border-style: solid;
-  border-radius: 5%;
-  padding: 0;
-  width: 360px;
-  margin-top: 10px;
-  margin-right: 50%;
-  text-align: center;
+.post-one {
+  padding: 50px;
+  width: 80%;
+  margin: 0 auto;
 }
 
-footer .footer-content {
-  text-align: center;
+.post-one h2 {
+  padding: 20px 0;
 }
 
-footer .copy p {
-  text-align: center;
+.post-one h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-#blog-posts {
-  min-height: 400px;
-  text-align: center;
-  padding: 20px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 400px 400px;
-      grid-template-columns: 400px 400px;
-  grid-column-gap: 20px;
+.post-two {
+  padding: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.post-two h2 {
+  padding: 20px 0;
+}
+
+.footer-wrapper {
+  width: 100%;
+  height: 200px;
+  background: #000;
 }
 /*# sourceMappingURL=style.css.map */
