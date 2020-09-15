@@ -1,8 +1,3 @@
-/*
-create variable - $primarybtn: "color";
-nesting - all classes and ids can go inside the main property
-*/
-
 *{
     margin: 0px;
     padding: 0px;
@@ -89,22 +84,3 @@ header {
         padding: 20px 0;
     }
 }
-
-.footer-wrapper {
-    width: 100%;
-    height: 200px;
-    background: #000;
-    color: #b2bec3;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.copyrights-div {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-main {
-    display: flex;
-}
-
-
