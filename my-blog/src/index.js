@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './theme';
-import './img/hero.jpg';
 
 ReactDOM.render(
 	<ThemeProvider theme={theme}>
