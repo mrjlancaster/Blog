@@ -2,6 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from './theme';
+import './img/hero.jpg';
 
 ReactDOM.render(
-    <App />, document.getElementById('root'));
+	<ThemeProvider theme={theme}>
+		<App />
+	</ThemeProvider>,
+	document.getElementById('root'));
