@@ -1,9 +1,12 @@
 import React from 'react';
+import useStyles from './Styles';
+
+// layouts
+import Header from './components/Header';
+import Hero from './components/Hero';
 
 // material ui imports
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
@@ -16,55 +19,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 
 // image imports
-import showcase from './img/header.jpg';
 import virus from './img/virus.jpg';
 import water from './img/water.jpg';
-
-// styles
-const useStyles = makeStyles((theme) => ({
-
-	appBar: {
-		backgroundColor: '#fff'
-	},
-	hero: {
-		backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${showcase})`,
-		height: 500,
-		backgroundPosition: 'center',
-		backgroundRepeat: 'no-repeat',
-		backgroundSize: 'cover',
-		position: 'relative',
-		display: 'flex',
-		justifyContent: 'center',
-		alignItems: 'center',
-		color: '#fff',
-		fontSize: '4rem',
-		flexDirection: 'Column'
-	},
-	heroQuote: {
-		fontSize: 22
-	},
-	blogsContainer: {
-		paddingTop: theme.spacing(3)
-	},
-	blogTitle: {
-		fontWeight: 800,
-		paddingBottom: theme.spacing(3)
-	},
-	card: {
-		maxWidth: "100%"
-	},
-	media: {
-		height: 240, 
-	},
-	cardActions: {
-		display: 'flex',
-		margin: '0 10px',
-		justifyContent: 'space-between'
-	},
-	author: {
-		display: 'flex'
-	}
-}));
 
 
 // App
@@ -74,17 +30,8 @@ function App() {
 
   return (
     <div className="App">
-		<AppBar className={classes.appBar} position="static">
-			<Toolbar>
-				<Typography variant="h6" color='primary'>
-					The Alien Talks
-				</Typography>
-			</Toolbar>
-		</AppBar>
-		<Box className={classes.hero}>
-			<Box>The Alien Talks</Box>
-			<Typography className={classes.heroQuote} component='p'>What would the alien think?</Typography>
-		</Box>
+		<Header />
+		<Hero />
 		<Container maxWidth="lg" className={classes.blogsContainer}>
 			<Typography variant="h4" className={classes.blogTitle}>
 				Episodes
