@@ -2,14 +2,23 @@ import React from 'react';
 
 // Import styles
 import useStyles from '../Styles';
+
+// Material UI imports
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-// Material UI imports
+import Box from '@material-ui/core/Box';
+import Typography from '@material-ui/core/Typography';
+import Avatar from '@material-ui/core/Avatar';
 
+// Import images
+import virus from '../img/virus.jpg'
+
+
+// Post component
 function Post() {
 	const classes = useStyles();
 
@@ -42,7 +51,6 @@ function Post() {
 				</CardActions>
 			</Card>
 		</Grid>
-
 	)
 }
 export default Post;
