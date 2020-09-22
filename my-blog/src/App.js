@@ -4,6 +4,7 @@ import useStyles from './Styles';
 // layouts
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Post from './components/Post';
 
 // material ui imports
 import { makeStyles } from '@material-ui/core/styles';
@@ -37,6 +38,7 @@ function App() {
 				Episodes
 			</Typography>
 			<Grid container spacing={3}>
+				<Post />
 				{/* <Grid item xs={12} sm={6} md={4}>
 					<Card className={classes.root}>
 						<CardActionArea>
