@@ -13,12 +13,10 @@ function Hero() {
 	const classes = useStyles();
 
 	return (
-		<div>
-			<Box className={classes.hero}>
-				<Box>The Alien Talks</Box>
-			<Typography className={classes.heroQuote} component='p'>What would the alien think?</Typography>
-			</Box>
-		</div>
+		<Box className={classes.hero}>
+			<Box>The Alien Talks</Box>
+		<Typography className={classes.heroQuote} component='p'>What would the alien think?</Typography>
+		</Box>
 	)
 }
 
