@@ -14,8 +14,8 @@ function Hero() {
 
 	return (
 		<Box className={classes.hero}>
-			<Box>The Alien Talks</Box>
-		<Typography className={classes.heroQuote} component='p'>What would the alien think?</Typography>
+			{/* <Box>The Alien Talks</Box>
+		<Typography className={classes.heroQuote} component='p'>What would the alien think?</Typography> */}
 		</Box>
 	)
 }

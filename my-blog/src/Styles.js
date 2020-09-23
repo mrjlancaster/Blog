@@ -1,13 +1,43 @@
-import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import showcase from './img/header.jpg';
+import showcase from './img/hero.jpg';
+
+
+// const headerStyles = makeStyles(() => ({
+// 	ul: {
+// 		display: 'flex'
+// 	},
+// 	navLinks: {
+// 		color: '#000',
+// 		listStyle: 'none',
+// 		textDecoration: 'none',
+// 		marginRight: 60,
+// 		fontSize: 25
+// 	}
+// }));
 
 
 const useStyles = makeStyles((theme) => ({
 
-	appBar: {
-		backgroundColor: '#fff'
+
+	/* contact form styles */
+	root: {
+		display: 'flex',
+		flexDirection: 'column',
+		alignItems: 'center',
 	},
+	contactHeading: {
+		textAlign: 'center'
+	},
+	nameInput: {
+		width: 300,
+
+	},
+	formMessage: {
+		marginTop: 40
+	},
+
+
+	/* home section styles */
 	hero: {
 		backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${showcase})`,
 		height: 500,
@@ -21,9 +51,6 @@ const useStyles = makeStyles((theme) => ({
 		color: '#fff',
 		fontSize: '4rem',
 		flexDirection: 'Column'
-	},
-	heroQuote: {
-		fontSize: 22
 	},
 	blogsContainer: {
 		paddingTop: theme.spacing(3)
@@ -41,11 +68,12 @@ const useStyles = makeStyles((theme) => ({
 	cardActions: {
 		display: 'flex',
 		margin: '0 10px',
-		justifyContent: 'space-between'
+		justifyContent: 'flex-end'
 	},
-	author: {
+	date: {
 		display: 'flex'
 	}
 }));
 
 export default useStyles;
+

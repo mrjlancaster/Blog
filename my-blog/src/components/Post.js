@@ -12,7 +12,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
 
 // Import images
 import virus from '../img/virus.jpg'
@@ -37,16 +36,10 @@ function Post() {
 					</CardContent>
 				</CardActionArea>
 				<CardActions className={classes.cardActions}>
-					<Box className={classes.author}>
-						<Avatar src="#" />
-						<Box ml={2}>
-							<Typography variant="subtitle2" component="p">
-								Johnny Lancaster
-							</Typography>
-							<Typography variant="subtitle2" color='textSecondary' component="p">
-								Sept 19, 2020
-							</Typography>
-						</Box>
+					<Box className={classes.date}>
+						<Typography variant="subtitle2" color='textSecondary' component="p">
+							Sept 19, 2020
+						</Typography>
 					</Box>
 				</CardActions>
 			</Card>
