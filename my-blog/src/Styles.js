@@ -33,19 +33,6 @@ const useStyles = makeStyles((theme) => ({
 	contactHeading: {
 		textAlign: 'center'
 	},
-	root: {
-		display: 'flex',
-		flexDirection: 'column',
-		alignItems: 'center',
-	},
-	nameInput: {
-		width: 300,
-
-	},
-	formMessage: {
-		marginTop: 40
-	},
-
 
 	/* home section styles */
 	hero: {

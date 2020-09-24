@@ -1,8 +1,10 @@
 import React from 'react';
 
 // Material ui
-import makeStyles from '../Styles';
+import useStyles from '../Styles';
 import Typography from '@material-ui/core/Typography';
+
+
 
 
 class Contact extends React.Component {
@@ -39,19 +41,27 @@ class Contact extends React.Component {
 	
 	render() {
 
-		// const classes = makeStyles();
+		// const classes = useStyles();
+		// const formStyles = {
+		// 	formContainer: {
+		// 		display: 'flex',
+		// 		flexDirection: 'column',
+		// 		justifyContent: 'center',
+		// 		alignItems: 'center',
+		// 		height: '80vh'
+		// 	}
+		// }
+
 
 		return (
 			<div>
-			{/* <Typography 
-			className={classes.contactHeading} 
-			variant="h3" 
-			color='main'>
+			{/* <Typography className={classes.contactHeading} variant="h3" color='main'>
 				Contact
-			</Typography>			 */}
-			<form styles={style.formContainer} onSubmit={this.handleSubmit}>
+			</Typography> */}
+			
+			<form onSubmit={this.handleSubmit}>
 				<div>
-					<label styles={style.name}>Full Name</label>
+					<label>Full Name</label>
 					<input type="text" placeholder="name" value={this.state.name} onChange={this.handleNameChange}/>
 				</div>
 
@@ -67,7 +77,9 @@ class Contact extends React.Component {
 					</textarea>
 				</div>
 
-				<button type="submit">Submit</button>
+				<div>
+					<button type="submit">Submit</button>
+				</div>
 			</form>
 		</div> 
 
