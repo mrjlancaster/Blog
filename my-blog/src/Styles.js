@@ -28,10 +28,19 @@ import showcase from './img/hero.jpg';
 
 const useStyles = makeStyles((theme) => ({
 
-
-	/* contact form styles */
+	// contact page style
+	formContainer: {
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'space-evenly',
+		alignItems: 'center',
+		height: '68vh'
+	},
 	contactHeading: {
 		textAlign: 'center'
+	},
+	nameInput: {
+		padding: 0,
 	},
 
 	/* home section styles */

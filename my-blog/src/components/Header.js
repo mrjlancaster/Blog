@@ -13,6 +13,7 @@ function Header() {
 		headerContainer: {
 			height: '20vh',
 			display: 'flex',
+			marginTop: 20,
 			flexDirection: 'column',
 			justifyContent: 'center',
 			alignItems: 'center'
