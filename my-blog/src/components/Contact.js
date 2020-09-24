@@ -2,33 +2,88 @@ import React from 'react';
 
 // Material ui
 import makeStyles from '../Styles';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 
 
+class Contact extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			name: '',
+			email: '',
+			message: ''
+		};
+	}
 
-function Contact() {
+	handleNameChange = (event) => {
+		this.setState({
+			name: event.target.value
+		})
+	}
 
-	const classes = makeStyles();
+	handleEmail = (event) => {
+		this.setState({
+			email: event.target.value
+		})
+	}
 
-	return (
-		<div>
-			<Typography className={classes.contactHeading} variant="h3" color='main'>
+	handleMessageChange = (event) => {
+		this.setState({
+			message: event.target.value
+		})
+	}
+
+	handleSubmit = (event) => {
+		alert(`${this.state.name}, ${this.state.email}, ${this.state.message}`);
+	}
+	
+	render() {
+
+		// const classes = makeStyles();
+
+		const style = {
+			formContainer: {
+				display: 'flex',
+				backgroundColor: 'blue'
+			},
+			name: {
+				fontSize: 30
+			}
+		}
+
+
+		return (
+			<div>
+			{/* <Typography 
+			className={classes.contactHeading} 
+			variant="h3" 
+			color='main'>
 				Contact
-			</Typography>			
-			<form className={classes.root} noValidate autoComplete="off">
-				<TextField id="outlined-basic" label="Full Name" variant="outlined" className={classes.nameInput} />
-				<Box className={classes.formMessage}>
-					<TextField id="outlined-basic" label="Message" variant="outlined" />
-				</Box>
-				<Button variant="contained" color="primary">
-					Send Message
-				</Button>
+			</Typography>			 */}
+			<form styles={style.formContainer} onSubmit={this.handleSubmit}>
+				<div>
+					<label styles={style.name}>Full Name</label>
+					<input type="text" placeholder="name" value={this.state.name} onChange={this.handleNameChange}/>
+				</div>
+
+				<div>
+					<label>Email</label>
+					<input type="email" value={this.state.email} onChange={this.handleEmail} />
+				</div>
+
+				<div>
+					<textarea 
+						value={this.state.message} 
+						onChange={this.handleMessageChange}>
+					</textarea>
+				</div>
+
+				<button type="submit">Submit</button>
 			</form>
 		</div> 
-	)
+			
+		)
+	}
 }
 
 export default Contact;

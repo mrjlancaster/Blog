@@ -20,13 +20,13 @@ const useStyles = makeStyles((theme) => ({
 
 
 	/* contact form styles */
+	contactHeading: {
+		textAlign: 'center'
+	},
 	root: {
 		display: 'flex',
 		flexDirection: 'column',
 		alignItems: 'center',
-	},
-	contactHeading: {
-		textAlign: 'center'
 	},
 	nameInput: {
 		width: 300,
