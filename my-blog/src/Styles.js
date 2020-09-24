@@ -16,6 +16,16 @@ import showcase from './img/hero.jpg';
 // }));
 
 
+// Header styles
+// const headerStyles = makeStyles((theme) => ({
+
+// }))
+
+// const contactStyles = makeStyles((theme) => ({
+
+// }))
+
+
 const useStyles = makeStyles((theme) => ({
 
 

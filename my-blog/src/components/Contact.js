@@ -41,17 +41,6 @@ class Contact extends React.Component {
 
 		// const classes = makeStyles();
 
-		const style = {
-			formContainer: {
-				display: 'flex',
-				backgroundColor: 'blue'
-			},
-			name: {
-				fontSize: 30
-			}
-		}
-
-
 		return (
 			<div>
 			{/* <Typography 
@@ -81,7 +70,7 @@ class Contact extends React.Component {
 				<button type="submit">Submit</button>
 			</form>
 		</div> 
-			
+
 		)
 	}
 }
