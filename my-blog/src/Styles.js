@@ -26,22 +26,59 @@ import showcase from './img/hero.jpg';
 // }))
 
 
+
 const useStyles = makeStyles((theme) => ({
+
+	// header styles
+	headerContainer: {
+		height: '25vh',
+		display: 'flex',
+		marginTop: 20,
+		flexDirection: 'column',
+		justifyContent: 'center',
+		alignItems: 'center'
+	},
+	ul: {
+		display: 'flex'
+	},
+	navLinks: {
+		color: '#000',
+		listStyle: 'none',
+		textDecoration: 'none',
+		marginRight: 60,
+		fontSize: 17
+	},
 
 	// contact page style
 	formContainer: {
 		display: 'flex',
 		flexDirection: 'column',
-		justifyContent: 'space-evenly',
+		justifyContent: 'center',
 		alignItems: 'center',
-		height: '68vh'
+		height: '65vh'
 	},
 	contactHeading: {
-		textAlign: 'center'
+		textAlign: 'center',
+		position: 'relative',
+		bottom: 20
+	},
+	formBox: {
+		marginBottom: 15
 	},
 	nameInput: {
-		padding: 0,
+		width: 400,
 	},
+	emailInput: {
+		width: 400,
+	},
+	messageInput: {
+		width: 400,
+	},
+	button: {
+		width: 400
+	},
+
+	
 
 	/* home section styles */
 	hero: {

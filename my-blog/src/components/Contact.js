@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
+import { TextareaAutosize } from '@material-ui/core';
 
 
 
@@ -51,30 +52,31 @@ const Contact = ()  => {
 	}
 
 
-
 	return (
 		<div>
+	
+		
+		<form onSubmit={handleSubmit} className={classes.formContainer}>
 		<Typography className={classes.contactHeading} variant="h4" color='main'>
 			Get In Touch
 		</Typography>
-		
-		<form onSubmit={handleSubmit} className={classes.formContainer}>
-			<Box>
-				<TextField className={classes.nameInput} id="outlined-basic" label="Full Name" variant="outlined" value={form.name} onChange={handleNameChange} />
+
+			<Box className={classes.formBox}>
+				<TextField className={classes.nameInput} id="outlined-basic" label="Your Name" variant="outlined" value={form.name} onChange={handleNameChange} size="small" />
 			</Box>
-			<Box>
-				<TextField className={classes.emailInput} id="outlined-basic" label="Email" variant="outlined" value={form.email} onChange={handleEmail} />
+			<Box className={classes.formBox}>
+				<TextField className={classes.emailInput} id="outlined-basic" label="Your Email" variant="outlined" value={form.email} onChange={handleEmail} size="small" />
 			</Box>
 				
-			<Box>
-				<TextField className={classes.messageInput} id="outlined-basic" label="Message" variant="outlined" value={form.message} onChange={handleMessageChange}/>
+			<Box className={classes.formBox}>
+				<TextField id="outlined-multiline-static" label="Message" multiline rows={4} variant="outlined" value={form.message} className={classes.messageInput} onChange={handleMessageChange}/>
 			</Box>
 			
-			<div>
-				<Button type="submit" variant="contained" color="primary">
+			<Box>
+				<Button className={classes.button} type="submit" variant="contained" size="large" color="primary">
 					Submit
 				</Button>						
-			</div>
+			</Box>
 		</form>
 	</div> 
 	)
