@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
 	/* home section styles */
 	hero: {
 		backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${showcase})`,
-		height: 500,
+		height: 300,
 		backgroundPosition: 'center',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
@@ -115,6 +115,11 @@ const useStyles = makeStyles((theme) => ({
 	},
 	date: {
 		display: 'flex'
+	},
+	footer: {
+		minHeight: 100,
+		backgroundColor: '#000',
+		color: '#fff'
 	}
 }));
 

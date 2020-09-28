@@ -4,6 +4,7 @@ import useStyles from '../Styles';
 // layouts
 import Hero from './Hero';
 import Post from './Post';
+import Footer from './Footer';
 
 // material ui imports
 import Typography from '@material-ui/core/Typography';
@@ -26,6 +27,7 @@ function Home() {
 					<Post />
 				</Grid>
 			</Container>
+			<Footer />
 		</div>
 	);
 }

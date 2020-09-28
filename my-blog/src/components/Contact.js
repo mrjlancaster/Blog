@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from './Footer';
 
 // Material ui
 import useStyles from '../Styles';
@@ -78,6 +79,7 @@ const Contact = ()  => {
 				</Button>						
 			</Box>
 		</form>
+		<Footer />
 	</div> 
 	)
 }
