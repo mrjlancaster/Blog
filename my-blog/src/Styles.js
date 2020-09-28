@@ -117,9 +117,49 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex'
 	},
 	footer: {
-		minHeight: 100,
+		minHeight: 200,
 		backgroundColor: '#000',
-		color: '#fff'
+		color: '#cacaca',
+		display: 'flex',
+		flexDirection: 'column',
+		alignItems: 'center',
+		justifyContent: 'space-between'
+	},
+	footerNav: {
+		display: 'flex',
+		position: 'relative',
+		top: 60,
+	},
+	footerLinks: {
+		color: '#cacaca',
+		listStyle: 'none',
+		textDecoration: 'none',
+		fontSize: 20,
+		margin: '0 25px 0 25px'
+	},
+	copyright: {
+		marginBottom: 5
+	},
+	buttonContainer: {
+		display: 'flex',
+		width: '100%',
+		position: 'absolute',
+		alignItems: 'flex-start',
+		justifyContent: 'flex-end',
+		margin: '15px 20px 0 0'
+	},
+	upButton: {
+		background: 'none',
+		color: '#fff',
+		height: 40,
+		outline: 'none',
+		width: 50,
+		transition: 'all 400ms ease',
+		border: '1px solid gray',
+		cursor: 'pointer',
+		'&:hover': {
+			opacity: '0.5'
+		}
 	}
 }));
 

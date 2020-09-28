@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Material ui imports
 import useStyles from '../Styles';
@@ -12,20 +13,27 @@ function Footer() {
 
 	return (
 		<div className={classes.footer}>
-			<Box>
-				<Typography variant="p">Home</Typography>
-				<Typography variant="p">Episodes</Typography>
-				<Typography variant="p">Contact</Typography>
-			</Box>
-
+			<ul className={classes.footerNav}>
+				<Link to="/Home" className={classes.footerLinks}>
+					<li>Home</li>
+				</Link>
+				<Link to="/Episodes" className={classes.footerLinks}>
+					<li>Episodes</li>
+				</Link>
+				<Link to="/Contact" className={classes.footerLinks}>
+					<li>Contact</li>
+				</Link>
+			</ul>
 		
-			<Box>
-				<Typography>
+			<Box className={classes.copyright}>
+				<Typography variant="p">
 					&copy;2020 The Alien Talks, All Rights Reserved
 				</Typography>
 			</Box>
 
-			<button><i class="fas fa-arrow-up"></i></button>
+			<div className={classes.buttonContainer}>
+				<button className={classes.upButton}><i class="fas fa-arrow-up"></i></button>
+			</div>
 
 		</div>
 	)
