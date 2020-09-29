@@ -138,7 +138,8 @@ const useStyles = makeStyles((theme) => ({
 		margin: '0 25px 0 25px'
 	},
 	copyright: {
-		marginBottom: 5
+		marginBottom: 5,
+		fontSize: 14
 	},
 	buttonContainer: {
 		display: 'flex',
