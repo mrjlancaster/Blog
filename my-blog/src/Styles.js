@@ -144,17 +144,18 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		width: '100%',
 		position: 'absolute',
-		alignItems: 'flex-start',
 		justifyContent: 'flex-end',
 		margin: '15px 20px 0 0'
 	},
 	upButton: {
+		position: 'absolute',
+		top: 135,
 		background: 'none',
 		color: '#fff',
 		height: 40,
 		outline: 'none',
 		width: 50,
-		transition: 'all 400ms ease',
+		transition: 'all 300ms ease',
 		border: '1px solid gray',
 		cursor: 'pointer',
 		'&:hover': {

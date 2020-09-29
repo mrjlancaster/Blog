@@ -12,7 +12,7 @@ const Footer =() => {
 	const classes = useStyles();
 
 
-	const handleScrollUp = () => {
+	const handleScroll = () => {
 		window.scrollTo({
 			top: 0,
 			behavior: 'smooth'
@@ -32,18 +32,14 @@ const Footer =() => {
 					<li>Contact</li>
 				</Link>
 			</ul>
-		
 			<Box className={classes.copyright}>
 				<Typography variant="p">
 					&copy;2020 The Alien Talks, All Rights Reserved
 				</Typography>
 			</Box>
-
 			<div className={classes.buttonContainer}>
 				<button 
-				className={classes.upButton}
-				onClick={handleScrollUp}
-				>
+				className={classes.upButton} onClick={handleScroll}>
 					<i class="fas fa-arrow-up"></i>
 				</button>
 			</div>
