@@ -1,5 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import showcase from './img/hero.jpg';
+import virus from './img/virus.jpg';
 
 
 // const headerStyles = makeStyles(() => ({
@@ -82,8 +83,8 @@ const useStyles = makeStyles((theme) => ({
 
 	/* home section styles */
 	hero: {
-		backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${showcase})`,
-		height: 300,
+		backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${virus})`,
+		height: 400,
 		backgroundPosition: 'center',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
@@ -162,7 +163,7 @@ const useStyles = makeStyles((theme) => ({
 		'&:hover': {
 			opacity: '0.5'
 		}
-	}
+	},
 }));
 
 export default useStyles;
