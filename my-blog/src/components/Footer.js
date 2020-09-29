@@ -8,11 +8,16 @@ import { Box, Typography } from '@material-ui/core';
 
 
 const Footer =() => {
-
-	const [button, setButton] = useState();
-
-
+	
 	const classes = useStyles();
+
+
+	const handleScrollUp = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	}
 
 	return (
 		<div className={classes.footer}>
@@ -35,9 +40,13 @@ const Footer =() => {
 			</Box>
 
 			<div className={classes.buttonContainer}>
-				<button className={classes.upButton}><i class="fas fa-arrow-up"></i></button>
+				<button 
+				className={classes.upButton}
+				onClick={handleScrollUp}
+				>
+					<i class="fas fa-arrow-up"></i>
+				</button>
 			</div>
-
 		</div>
 	)
 }
