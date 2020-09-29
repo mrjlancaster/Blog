@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Material ui imports
@@ -7,7 +7,10 @@ import { Box, Typography } from '@material-ui/core';
 
 
 
-function Footer() {
+const Footer =() => {
+
+	const [button, setButton] = useState();
+
 
 	const classes = useStyles();
 

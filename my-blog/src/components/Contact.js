@@ -10,8 +10,6 @@ import Button from '@material-ui/core/Button';
 import { TextareaAutosize } from '@material-ui/core';
 
 
-
-
 const Contact = ()  => {
 
 	const classes = useStyles();
@@ -52,27 +50,21 @@ const Contact = ()  => {
 		}
 	}
 
-
 	return (
 		<div>
-	
-		
 		<form onSubmit={handleSubmit} className={classes.formContainer}>
-		<Typography className={classes.contactHeading} variant="h4" color='main'>
-			Get In Touch
-		</Typography>
-
+			<Typography className={classes.contactHeading} variant="h4" color='main'>
+				Get In Touch
+			</Typography>
 			<Box className={classes.formBox}>
 				<TextField className={classes.nameInput} id="outlined-basic" label="Your Name" variant="outlined" value={form.name} onChange={handleNameChange} size="small" />
 			</Box>
 			<Box className={classes.formBox}>
 				<TextField className={classes.emailInput} id="outlined-basic" label="Your Email" variant="outlined" value={form.email} onChange={handleEmail} size="small" />
 			</Box>
-				
 			<Box className={classes.formBox}>
 				<TextField id="outlined-multiline-static" label="Message" multiline rows={4} variant="outlined" value={form.message} className={classes.messageInput} onChange={handleMessageChange}/>
 			</Box>
-			
 			<Box>
 				<Button className={classes.button} type="submit" variant="contained" size="large" color="primary">
 					Submit
