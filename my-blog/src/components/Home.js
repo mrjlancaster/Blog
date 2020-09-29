@@ -1,6 +1,5 @@
 import React from 'react';
 import useStyles from '../Styles';
-import Template from './Template';
 
 // layouts
 import Hero from './Hero';
