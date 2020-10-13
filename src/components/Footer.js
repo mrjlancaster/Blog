@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Material ui imports
@@ -40,7 +40,7 @@ const Footer =() => {
 			<div className={classes.buttonContainer}>
 				<button 
 				className={classes.upButton} onClick={handleScroll}>
-					<i class="fas fa-arrow-up"></i>
+					<i className="fas fa-arrow-up"></i>
 				</button>
 			</div>
 		</div>

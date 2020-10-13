@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-import showcase from './img/hero.jpg';
 import virus from './img/virus.jpg';
 
 
