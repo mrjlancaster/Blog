@@ -48,6 +48,11 @@ const useStyles = makeStyles((theme) => ({
 		marginRight: 60,
 		fontSize: 17
 	},
+	
+	// Post component styles
+	blogTitle: {
+		paddingBottom: 40
+	},
 
 	// contact page style
 	formContainer: {
@@ -95,26 +100,10 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: '4rem',
 		flexDirection: 'Column'
 	},
-	blogsContainer: {
-		paddingTop: theme.spacing(3)
-	},
-	blogTitle: {
-		fontWeight: 800,
-		paddingBottom: theme.spacing(3)
-	},
-	card: {
-		maxWidth: "100%"
-	},
-	media: {
-		height: 240, 
-	},
-	cardActions: {
-		display: 'flex',
-		margin: '0 10px',
-		justifyContent: 'flex-end'
-	},
-	date: {
-		display: 'flex'
+	bodyContainer: {
+		paddingTop: theme.spacing(3),
+		width: '80%',
+		margin: '0 auto'
 	},
 	footer: {
 		minHeight: 200,
